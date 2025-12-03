@@ -9,3 +9,9 @@ if __name__=="__main__":
   m1=int(input())
 print(convert_minutes(m))  
 print(convert_minutes(m1))  
+
+o/p:
+130 
+110
+2 hrs 10 minutes
+1 hr 50 minutes
