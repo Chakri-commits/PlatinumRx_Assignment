@@ -8,3 +8,7 @@ def remove_duplicates(s):
 if __name__=="__main__":
   s=str(input())
 print(remove_duplicates(s))
+
+o/p:
+banana
+ban
