@@ -17,7 +17,7 @@ JOIN (
 -----------------------------------------------------------
 
 SELECT bc.booking_id,
-       SUM(bc.item_quantity * i.item_rate) AS total_amount
+       SUM(bc.item_quantity * i.item_id) AS total_amount
 FROM booking_commercials bc
 JOIN items i ON bc.item_id = i.item_id
 JOIN bookings b ON bc.booking_id = b.booking_id
