@@ -71,7 +71,7 @@ WITH monthly_bills AS (
     SELECT 
         u.user_id,
         DATE_FORMAT(bc.bill_date, '%Y-%m') AS month,
-        SUM(bc.item_quantity * i.item_rate) AS bill_value
+        SUM(bc.item_name * i.item_rate) AS bill_value
     FROM booking_commercials bc
     JOIN bookings b ON bc.booking_id = b.booking_id
     JOIN users u ON b.user_id = u.user_id
